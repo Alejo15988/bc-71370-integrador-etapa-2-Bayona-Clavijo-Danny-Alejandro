@@ -1,0 +1,199 @@
+{
+  "productos": [
+    {
+      "nombre": "IPhone 15 Pro ",
+      "foto": "img/apple-iphone-11-pro-max.jpg",
+      "detalles": "Dynamic Island Pantalla HDR True Tone Amplia gama de colores (P3) Toque con respuesta háptica Relación de contraste 2,000,000:1 (normal) Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores) Revestimiento oleofóbico resistente a huellas dactilares Compatibilidad para mostrar varios idiomas y caracteres simultáneamente",
+      "precio": "COP $ 4.500.000",
+      "stock": "22",
+      "marca": "Apple",
+      "categoria": "celulares",
+      "id": 1,
+      "envio": true,
+      "cantidad": 1
+    },
+    {
+      "nombre": "IPhone 14 Pro",
+      "foto": "img/apple-iphone-12.jpg",
+      "detalles": "\tDynamic Island Pantalla HDR True Tone Amplia gama de colores (P3) Toque con respuesta háptica Relación de contraste 2,000,000:1 (normal) Brillo máximo de 1,000 nits (normal); pico de brillo de 1,600 nits (HDR); pico de brillo de 2,000 nits (en exteriores) Revestimiento oleofóbico resistente a huellas dactilares Compatibilidad para mostrar varios idiomas y caracteres simultáneamente",
+      "precio": "COP $ 4.000.000",
+      "stock": "4",
+      "marca": "Apple",
+      "categoria": "celulares",
+      "id": 2,
+      "envio": true
+    },
+    {
+      "nombre": "Camara Canon",
+      "detalles": "a EOS R10 es perfecta para los creadores de contenido que buscan llevar su creatividad al siguiente nivel. Con un obturador mecánico de toma de alta velocidad y un enfoque automático ultrarrápido, la cámara EOS R10 ofrece algunas de las mejores características de la creciente serie EOS R en un diseño elegante y ligero.  Además, el eficiente procesador de imagen avanzado DIGIC X potencia la captura de vídeo 4K y reduce el ruido, para que se puedan hacer tomas continuas sin preocuparse de la captura.",
+      "foto": "img/camara-canon.jpg",
+      "precio": "COP $ 6.000.000",
+      "stock": 7,
+      "marca": "Rustic Soft Tuna",
+      "categoria": "Camara",
+      "id": 4,
+      "envio": true
+    },
+    {
+      "id": 6,
+      "nombre": "Chromecast",
+      "precio": "COP $ 400.000",
+      "stock": "58",
+      "marca": "Google",
+      "categoria": "Electronica",
+      "detalles": "Explora tu contenido de entretenimiento en un mismo lugar.4 Reproduce en streaming todo lo que quieras, únete en directo o juega a videojuegos.4 Haz más cosas con tu televisor y contrólalo con tu voz. Diseñado pensando en tu hogar y en el planeta.",
+      "foto": "img/chromecast-google.jpg",
+      "envio": true
+    },
+    {
+      "id": 7,
+      "nombre": "DJI Mavic 2 pro",
+      "precio": "COP $ 4.400.000",
+      "stock": "8",
+      "marca": "DJI",
+      "categoria": "Drones",
+      "detalles": "Sensor 1” CMOS Effective Pixels: 20 million Lens FOV: about 77° 35 mm Format Equivalent: 28 mm Aperture: f/2.8–f/11 Shooting Range: 1 m to ∞ ISO Range Video: 100-6400 Photo: 100-3200 (auto) 100-12800 (manual) Shutter Speed Electronic Shutter: 8–1/8000s Still Image Size 5472×3648 Still Photography Modes Single shot Burst shooting: 3/5 frames Auto Exposure Bracketing (AEB): 3/5 bracketed frames at 0.7 EV Bias Interval (JPEG: 2/3/5/7/10/15/20/30/60s RAW:5/7/10/15/20/30/60s) Video Resolution 4K: 3840×2160 24/25/30p 2.7K: 2688x1512 24/25/30/48/50/60p FHD: 1920×1080 24/25/30/48/50/60/120p Max Video Bitrate 100Mbps Color Mode Dlog-M (10bit), support HDR video (HLG 10bit) Supported File System FAT32 (≤ 32 GB) exFAT (> 32 GB) Photo Format JPEG / DNG (RAW) Video Format MP4 / MOV (MPEG-4 AVC/H.264, HEVC/H.265)",
+      "foto": "img/dji-mavic-2-pro.jpg",
+      "envio": true
+    },
+    {
+      "id": 8,
+      "nombre": "Auriculares Sony",
+      "precio": "COP $ 400.000",
+      "stock": "7",
+      "marca": "Sony",
+      "categoria": "Auriculares",
+      "detalles": "El paquete incluye: auriculares inalámbricos Sony WH-1000XM4 con cancelación de ruido (negro) y pantalla LED ultraportátil de 10000 mAh, banco de batería inalámbrico con PD3.0 de 18 W de carga rápida y entrada y salida USB-C Características: La tecnología de cancelación de ruido líder en la industria significa que escuchas cada palabra, nota y sintonía con una claridad increíble, sin importar tu entorno. Estos auriculares con cancelación de ruido cuentan con micrófonos adicionales que ayudan a aislar el sonido mientras hablas por teléfono, lo que resulta en una mejor calidad de llamada telefónica y la reducción de sonidos aún más altos y de frecuencia media",
+      "foto": "img/auriculares-sony.jpg",
+      "envio": true
+    }
+  ],
+  "carrito": [
+    [
+      {
+        "nombre": "IPhone 15 Pro Max",
+        "foto": "img/apple-iphone-11-pro-max.jpg",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "precio": 250.5,
+        "stock": "4444",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 1,
+        "envio": false,
+        "cantidad": 3
+      },
+      {
+        "nombre": "IPhone 12",
+        "foto": "img/apple-iphone-12.jpg",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": "4",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 2,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Auriculares Sony",
+        "foto": "img/auriculares-sony.jpg",
+        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Sleek Cotton Chips",
+        "categoria": "Refined",
+        "id": 3,
+        "envio": false,
+        "cantidad": 3
+      },
+      {
+        "nombre": "Camara Canon",
+        "detalles": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+        "foto": "img/camara-canon.jpg",
+        "precio": 678,
+        "stock": 7,
+        "marca": "Rustic Soft Tuna",
+        "categoria": "Generic",
+        "id": 4,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Samsung",
+        "detalles": "Facere molestiae odio neque rerum provident voluptas",
+        "foto": "img/celular-samsung.jpg",
+        "precio": 1200,
+        "stock": 4,
+        "marca": "Samsung",
+        "categoria": "celulares",
+        "id": 5,
+        "envio": true,
+        "cantidad": 1
+      }
+    ],
+    [
+      {
+        "id": 6,
+        "nombre": "Chromecast",
+        "precio": 332.22,
+        "stock": 4,
+        "marca": "Google",
+        "categoria": "Electronica",
+        "detalles": "Natus iure quasi cupiditate quisquam facere molestiae odio neque rerum provident voluptas!",
+        "foto": "img/chromecast-google.jpg",
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "id": 7,
+        "nombre": "DJI Mavic 2 pro",
+        "precio": 333.22,
+        "stock": 2,
+        "marca": "DJI",
+        "categoria": "Drones",
+        "detalles": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "foto": "img/dji-mavic-2-pro.jpg",
+        "envio": false,
+        "cantidad": 3
+      }
+    ],
+    [
+      {
+        "nombre": "IPhone 15 Pro Max",
+        "foto": "img/apple-iphone-11-pro-max.jpg",
+        "detalles": "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "precio": 250.5,
+        "stock": "4444",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 1,
+        "envio": false,
+        "cantidad": 1
+      },
+      {
+        "nombre": "IPhone 12",
+        "foto": "img/apple-iphone-12.jpg",
+        "detalles": "Quasi cupiditate quisquam facere molestiae",
+        "precio": 240.3,
+        "stock": "4",
+        "marca": "Apple",
+        "categoria": "celulares",
+        "id": 2,
+        "envio": true,
+        "cantidad": 1
+      },
+      {
+        "nombre": "Auriculares Sony",
+        "foto": "img/auriculares-sony.jpg",
+        "detalles": "Saepe enim ipsa facilis velit quidem voluptatibus totam dicta",
+        "precio": 985,
+        "stock": 4,
+        "marca": "Sleek Cotton Chips",
+        "categoria": "Refined",
+        "id": 3,
+        "envio": false,
+        "cantidad": 1
+      }
+    ]
+  ]
+}

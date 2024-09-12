@@ -1,0 +1,100 @@
+/* Contacto.scss */
+
+.contacto-formulario {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff; /* Fondo blanco para un diseño limpio */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más prominente para un efecto elevado */
+    animation: fadeIn 1s ease-in-out; /* Animación de aparición suave */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333; /* Gris oscuro */
+    margin-bottom: 1.5rem;
+    transition: color 0.3s ease; /* Transición suave para el color del título */
+  }
+  
+  form {
+    display: grid;
+    gap: 1.5rem; /* Espacio mayor entre los elementos del formulario */
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #666; /* Gris medio */
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd; /* Borde más grueso para un diseño más prominente */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el borde y la sombra */
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    border-color: #007bff; /* Color azul para el borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul sutil al enfocar */
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+  }
+  
+  textarea {
+    resize: vertical; /* Permite ajustar el tamaño vertical del textarea */
+    min-height: 150px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 0.5rem;
+  }
+  
+  .boton-enviar {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Verde para el botón */
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color de fondo y el tamaño */
+    transform: scale(1); /* Tamaño inicial del botón */
+  }
+  
+  .boton-enviar:hover {
+    background-color: #218838; /* Verde oscuro para el hover */
+    transform: scale(1.05); /* Aumenta el tamaño del botón al pasar el cursor */
+  }
+  
+  .boton-enviar:active {
+    transform: scale(0.95); /* Efecto de contracción al hacer clic */
+  }
+  
+  input[type="radio"]:focus {
+    outline: 2px solid #007bff; /* Resalta el radio button en el enfoque */
+    outline-offset: 2px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

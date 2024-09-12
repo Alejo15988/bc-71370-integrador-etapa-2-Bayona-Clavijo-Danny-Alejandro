@@ -1,0 +1,80 @@
+/* Tabla de alta con animaciones */
+
+.tabla-alta {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  animation: fadeIn 1s ease-in-out; /* Animación de aparición de la tabla */
+
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para el color de fondo y texto */
+  }
+
+  thead {
+    background-color: #007BFF; // Azul
+    color: #ffffff;
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo en el encabezado */
+
+    th {
+      font-weight: bold;
+    }
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: #f2f2f2; // Color de fila alterna
+      transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    }
+
+    tr:hover {
+      background-color: #ddd; // Color de fondo en hover
+      transform: scale(1.02); /* Efecto de escala en hover */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para el color de fondo y la escala */
+    }
+  }
+
+  .img-row {
+    max-width: 100px; // Ajusta el tamaño de la imagen según sea necesario
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave para la transformación de la imagen */
+    
+    &:hover {
+      transform: scale(1.1); /* Efecto de escala en hover */
+    }
+  }
+
+  button {
+    background-color: #007BFF; // Azul
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones suaves para el color de fondo y la transformación */
+
+    &:hover {
+      background-color: #0056b3; // Color más oscuro al pasar el mouse
+      transform: scale(1.05); /* Efecto de escala en hover */
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

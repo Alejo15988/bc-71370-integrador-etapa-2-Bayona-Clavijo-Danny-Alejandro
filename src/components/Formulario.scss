@@ -1,0 +1,130 @@
+// Variables de color y estilo
+$form-bg-color: #f5f5f5;
+$input-bg-color: #ffffff;
+$input-border-color: #cccccc;
+$input-focus-border-color: #007bff;
+$button-bg-color: #007bff;
+$button-hover-bg-color: #0056b3;
+$button-text-color: #ffffff;
+$label-color: #333333;
+$margin: 1rem;
+$padding: 0.75rem;
+$border-radius: 4px;
+
+// Contenedor del formulario
+.formulario-container {
+  background-color: $form-bg-color;
+  padding: $margin;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; // Animación de aparición del contenedor
+
+  h3 {
+    margin-bottom: $margin;
+    font-size: 1.5rem;
+    color: $label-color;
+    animation: slideIn 0.5s ease-out; // Animación de entrada del título
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      margin-bottom: $margin;
+      position: relative; // Necesario para la animación en labels
+
+      label {
+        display: block;
+        font-size: 0.9rem;
+        color: $label-color;
+        margin-bottom: 0.5rem;
+        transition: color 0.3s ease; // Transición suave para el color del label
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: $padding;
+        border: 1px solid $input-border-color;
+        border-radius: $border-radius;
+        background-color: $input-bg-color;
+        font-size: 0.9rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; // Transición suave para el borde y la sombra
+
+        &:focus {
+          outline: none;
+          border-color: $input-focus-border-color;
+          box-shadow: 0 0 8px rgba($input-focus-border-color, 0.3); // Sombra de enfoque
+          animation: inputFocus 0.3s ease; // Animación de enfoque del campo de entrada
+        }
+      }
+
+      input[type="checkbox"] {
+        margin-right: 0.5rem;
+      }
+    }
+
+    button {
+      padding: $padding;
+      border: none;
+      border-radius: $border-radius;
+      color: $button-text-color;
+      background-color: $button-bg-color;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease; // Transiciones suaves para el color y la transformación
+      margin-top: $margin;
+      transform: scale(1); // Escala inicial del botón
+
+      &:first-of-type {
+        margin-right: $margin;
+      }
+
+      &:hover {
+        background-color: $button-hover-bg-color;
+        transform: scale(1.05); // Efecto de escala en hover
+      }
+
+      &:last-of-type {
+        background-color: #dc3545;
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  }
+}
+
+// Animaciones
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes inputFocus {
+  0% {
+    border-color: $input-focus-border-color;
+    box-shadow: 0 0 8px rgba($input-focus-border-color, 0.3);
+  }
+  100% {
+    border-color: $input-focus-border-color;
+    box-shadow: 0 0 8px rgba($input-focus-border-color, 0.3);
+  }
+}

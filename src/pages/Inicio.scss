@@ -1,0 +1,98 @@
+// Variables de color y estilo
+$header-bg-color: #007bff;
+$header-text-color: #0047AB;
+$card-bg-color: #ffffff;
+$card-shadow-color: rgba(0, 0, 0, 0.1);
+$card-hover-shadow-color: rgba(0, 0, 0, 0.2);
+$card-transition: 0.3s ease;
+$section-padding: 2rem;
+$border-radius: 8px;
+$heading-font-size: 2rem;
+$subheading-font-size: 1rem;
+$text-color: #333333;
+
+// Estilos para la sección de tarjetas
+.section-cards {
+  padding: $section-padding;
+  background-color: #f8f9fa;
+  
+  &__header {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+    h1 {
+      font-size: $heading-font-size;
+      color: $header-text-color;
+      margin-bottom: 0.5rem;
+      animation: headerFadeIn 1s ease-out;
+    }
+
+    p {
+      font-size: $subheading-font-size;
+      color: $text-color;
+      opacity: 0;
+      animation: textFadeIn 1s 0.5s ease-out forwards;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    animation: cardsFadeIn 1s 1s ease-out forwards;
+    
+    .card {
+      background-color: $card-bg-color;
+      border-radius: $border-radius;
+      box-shadow: 0 4px 8px $card-shadow-color;
+      transition: box-shadow $card-transition, transform $card-transition;
+      width: 100%;
+      max-width: 300px;
+      margin: 0.5rem;
+      transform: scale(0.95);
+      opacity: 0;
+      animation: cardFadeIn 0.5s forwards;
+      
+      &:hover {
+        box-shadow: 0 8px 16px $card-hover-shadow-color;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+// Animaciones
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardsFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

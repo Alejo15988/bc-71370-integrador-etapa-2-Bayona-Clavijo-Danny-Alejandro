@@ -1,0 +1,106 @@
+/* Nosotros.scss */
+
+.nosotros-seccion {
+    padding: 2rem;
+    background-color: #f8f9fa; /* Fondo gris claro para contrastar con el contenido */
+    animation: fadeIn 1s ease-in-out; /* Animación de aparición suave */
+  }
+  
+  .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff; /* Fondo blanco para el contenedor del contenido */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el contenedor */
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333; /* Gris oscuro */
+    margin-bottom: 1.5rem;
+    position: relative;
+    animation: slideIn 1s ease-out; /* Animación de deslizamiento suave para el título */
+  }
+  
+  .contenido {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Espacio entre los elementos */
+  }
+  
+  .imagen {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoomIn 1s ease-out; /* Animación de zoom suave para la imagen */
+  }
+  
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para la imagen */
+  }
+  
+  .texto {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .texto p {
+    font-size: 1rem;
+    color: #555; /* Gris medio para el texto */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    position: relative;
+    animation: fadeInUp 1s ease-out; /* Animación de aparición desde abajo para los párrafos */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
